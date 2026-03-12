@@ -54,7 +54,12 @@ nav:
   - 홈: index.md
   - TOPCIT:
     - 개요: TOPCIT/README.md
-    - 1. 소프트웨어 개발: TOPCIT/01_소프트웨어개발/README.md
+    - 1. 소프트웨어 개발:
+      - 개요: TOPCIT/01_소프트웨어개발/README.md
+      - 알고리즘: TOPCIT/01_소프트웨어개발/01_알고리즘.md
+      - 자료구조: TOPCIT/01_소프트웨어개발/02_자료구조.md
+      - 소프트웨어 공학: TOPCIT/01_소프트웨어개발/03_소프트웨어공학.md
+      - 객체지향 프로그래밍: TOPCIT/01_소프트웨어개발/04_객체지향프로그래밍.md
     - 2. 데이터베이스: TOPCIT/02_데이터베이스/README.md
     - 3. 네트워크: TOPCIT/03_네트워크/README.md
     - 4. 정보보안: TOPCIT/04_정보보안/README.md
