@@ -1,0 +1,62 @@
+site_name: CS Study
+site_url: https://hundredman.github.io/cs-study
+site_description: TOPCIT 시험 준비 및 CS 공부 정리
+site_author: hundredman
+
+repo_name: hundredman/cs-study
+repo_url: https://github.com/hundredman/cs-study
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: ko
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 홈: index.md
+  - TOPCIT:
+    - 개요: TOPCIT/README.md
+    - 1. 소프트웨어 개발: TOPCIT/01_소프트웨어개발/README.md
+    - 2. 데이터베이스: TOPCIT/02_데이터베이스/README.md
+    - 3. 네트워크: TOPCIT/03_네트워크/README.md
+    - 4. 정보보안: TOPCIT/04_정보보안/README.md
+    - 5. IT 비즈니스: TOPCIT/05_IT비즈니스/README.md
+    - 6. 수학/통계: TOPCIT/06_수학통계/README.md
