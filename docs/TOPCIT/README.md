@@ -23,4 +23,3 @@
 ## 참고 링크
 
 - [TOPCIT 공식 사이트](https://www.topcit.or.kr)
-- [시험 일정 확인](https://www.topcit.or.kr/site/topcit/schedule.do)
