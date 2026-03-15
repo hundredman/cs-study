@@ -66,7 +66,12 @@ nav:
       - SQL: TOPCIT/02_데이터베이스/02_SQL.md
       - 트랜잭션: TOPCIT/02_데이터베이스/03_트랜잭션.md
       - NoSQL: TOPCIT/02_데이터베이스/04_NoSQL.md
-    - 3. 네트워크: TOPCIT/03_네트워크/README.md
+    - 3. 네트워크:
+      - 개요: TOPCIT/03_네트워크/README.md
+      - 네트워크 기초: TOPCIT/03_네트워크/01_네트워크기초.md
+      - 전송 계층: TOPCIT/03_네트워크/02_전송계층.md
+      - 응용 계층: TOPCIT/03_네트워크/03_응용계층.md
+      - 네트워크 장비: TOPCIT/03_네트워크/04_네트워크장비.md
     - 4. 정보보안: TOPCIT/04_정보보안/README.md
     - 5. IT 비즈니스: TOPCIT/05_IT비즈니스/README.md
     - 6. 수학/통계: TOPCIT/06_수학통계/README.md
