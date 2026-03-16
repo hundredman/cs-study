@@ -72,6 +72,11 @@ nav:
       - 전송 계층: TOPCIT/03_네트워크/02_전송계층.md
       - 응용 계층: TOPCIT/03_네트워크/03_응용계층.md
       - 네트워크 장비: TOPCIT/03_네트워크/04_네트워크장비.md
-    - 4. 정보보안: TOPCIT/04_정보보안/README.md
+    - 4. 정보보안:
+      - 개요: TOPCIT/04_정보보안/README.md
+      - 암호화: TOPCIT/04_정보보안/01_암호화.md
+      - 네트워크 보안: TOPCIT/04_정보보안/02_네트워크보안.md
+      - 취약점 및 공격: TOPCIT/04_정보보안/03_취약점및공격.md
+      - 보안 관리: TOPCIT/04_정보보안/04_보안관리.md
     - 5. IT 비즈니스: TOPCIT/05_IT비즈니스/README.md
     - 6. 수학/통계: TOPCIT/06_수학통계/README.md
