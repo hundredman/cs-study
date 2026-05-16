@@ -1,0 +1,2728 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TOPCIT 시험 준비 및 CS 공부 정리">
+      
+      
+        <meta name="author" content="hundredman">
+      
+      
+        <link rel="canonical" href="https://hundredman.github.io/cs-study/TOPCIT/02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/">
+      
+      
+        <link rel="prev" href="../04_NoSQL/">
+      
+      
+        <link rel="next" href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>연습문제 - CS Study</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../../.." title="CS Study" class="md-header__button md-logo" aria-label="CS Study" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CS Study
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              연습문제
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hundredman/cs-study" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hundredman/cs-study
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TOPCIT
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="CS Study" class="md-nav__button md-logo" aria-label="CS Study" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CS Study
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hundredman/cs-study" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hundredman/cs-study
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TOPCIT
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TOPCIT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. 소프트웨어 개발
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. 소프트웨어 개발
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/01_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    알고리즘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/02_%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자료구조
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/03_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B3%B5%ED%95%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    소프트웨어 공학
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/04_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    객체지향 프로그래밍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. 데이터베이스
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. 데이터베이스
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_%EA%B4%80%EA%B3%84%ED%98%95%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    관계형 데이터베이스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    트랜잭션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_NoSQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NoSQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관계형 데이터베이스
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SQL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        트랜잭션
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NoSQL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        복합 문제
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        복합 문제 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정답
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. 네트워크
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. 네트워크
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/01_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EA%B8%B0%EC%B4%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    네트워크 기초
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/02_%EC%A0%84%EC%86%A1%EA%B3%84%EC%B8%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    전송 계층
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/03_%EC%9D%91%EC%9A%A9%EA%B3%84%EC%B8%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    응용 계층
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/04_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9E%A5%EB%B9%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    네트워크 장비
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../04_%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. 정보보안
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. 정보보안
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/01_%EC%95%94%ED%98%B8%ED%99%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    암호화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/02_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%B3%B4%EC%95%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    네트워크 보안
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/03_%EC%B7%A8%EC%95%BD%EC%A0%90%EB%B0%8F%EA%B3%B5%EA%B2%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    취약점 및 공격
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/04_%EB%B3%B4%EC%95%88%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    보안 관리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. IT 비즈니스
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5. IT 비즈니스
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로젝트 관리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/02_IT%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT 서비스 관리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/03_%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%B6%84%EC%84%9D%EB%B0%8F%EC%84%A4%EA%B3%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시스템 분석 및 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/04_%EC%8B%A0%EA%B8%B0%EC%88%A0%ED%8A%B8%EB%A0%8C%EB%93%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    신기술 트렌드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. 수학/통계
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    6. 수학/통계
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/01_%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    이산수학
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/02_%ED%99%95%EB%A5%A0%ED%86%B5%EA%B3%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    확률/통계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/03_%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    선형대수
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/04_%EC%88%98%EC%B9%98%ED%95%B4%EC%84%9D%EA%B8%B0%EC%B4%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    수치해석 기초
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%ED%86%B5%ED%95%A9%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    통합 모의고사
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    오답 노트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%ED%95%B5%EC%8B%AC%EC%9A%94%EC%95%BD%EC%B9%B4%EB%93%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    핵심 요약 카드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%8B%9C%ED%97%98%EC%95%88%EB%82%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시험 안내
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%98%81%EC%97%AD%EA%B0%84%EC%97%B0%EA%B2%B0%EA%B0%9C%EB%85%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    영역 간 연결 개념
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B3%B5%EC%8B%9D%EC%9E%90%EB%A3%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    공식 자료
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관계형 데이터베이스
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SQL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        트랜잭션
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NoSQL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        복합 문제
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        복합 문제 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정답
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">데이터베이스 연습문제<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_2">관계형 데이터베이스<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>Q1.</strong> 다음 중 제2정규형(2NF)을 위반하는 경우는?</p>
+<ol>
+<li>속성값이 원자값이 아닌 경우</li>
+<li>기본키의 일부에만 종속된 속성이 존재하는 경우</li>
+<li>이행 함수 종속이 존재하는 경우</li>
+<li>결정자가 후보키가 아닌 경우</li>
+</ol>
+<hr />
+<p><strong>Q2.</strong> 학생(학번, 이름, 학과코드, 학과명) 테이블에서 <code>학번 → 학과코드 → 학과명</code> 관계가 존재할 때 위반되는 정규형은?</p>
+<ol>
+<li>1NF</li>
+<li>2NF</li>
+<li>3NF</li>
+<li>BCNF</li>
+</ol>
+<hr />
+<p><strong>Q3.</strong> ER 다이어그램에서 M:N 관계를 관계형 데이터베이스로 변환할 때 올바른 방법은?</p>
+<ol>
+<li>한쪽 테이블에 외래키를 추가한다</li>
+<li>중간 연결 테이블을 생성한다</li>
+<li>두 테이블을 하나로 합친다</li>
+<li>슈퍼타입/서브타입으로 분리한다</li>
+</ol>
+<hr />
+<h2 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h2>
+<p><strong>Q4.</strong> 다음 SQL 실행 결과로 옳은 것은?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">dept</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">Employee</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">dept</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3000</span><span class="p">;</span>
+</code></pre></div>
+<ol>
+<li>전체 직원의 부서별 평균 급여를 조회한다</li>
+<li>평균 급여가 3000 초과인 부서의 정보를 조회한다</li>
+<li>급여가 3000 초과인 직원의 부서를 조회한다</li>
+<li>모든 부서의 직원 수와 평균 급여를 조회한다</li>
+</ol>
+<hr />
+<p><strong>Q5.</strong> LEFT JOIN에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>양쪽 테이블에서 일치하는 행만 반환한다</li>
+<li>오른쪽 테이블의 모든 행과 왼쪽의 일치 행을 반환한다</li>
+<li>왼쪽 테이블의 모든 행을 반환하며, 일치하지 않는 경우 NULL로 채운다</li>
+<li>두 테이블의 모든 조합을 반환한다</li>
+</ol>
+<hr />
+<p><strong>Q6.</strong> 뷰(View)에 대한 설명으로 옳지 않은 것은?</p>
+<ol>
+<li>실제 데이터를 저장하지 않는 가상 테이블이다</li>
+<li>복잡한 쿼리를 단순화할 수 있다</li>
+<li>뷰에 직접 인덱스를 생성하여 성능을 향상시킬 수 있다</li>
+<li>특정 컬럼을 숨겨 보안성을 높일 수 있다</li>
+</ol>
+<hr />
+<p><strong>Q7.</strong> DDL과 DML의 차이로 옳은 것은?</p>
+<ol>
+<li>DDL은 수동 COMMIT이 필요하고, DML은 자동 COMMIT된다</li>
+<li>DDL은 자동 COMMIT되고, DML은 ROLLBACK이 가능하다</li>
+<li>DDL과 DML 모두 ROLLBACK이 가능하다</li>
+<li>DDL과 DML 모두 자동 COMMIT된다</li>
+</ol>
+<hr />
+<h2 id="_3">트랜잭션<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><strong>Q8.</strong> 트랜잭션의 ACID 속성 중 "트랜잭션이 완료된 후 결과가 영구적으로 반영된다"는 속성은?</p>
+<ol>
+<li>원자성(Atomicity)</li>
+<li>일관성(Consistency)</li>
+<li>격리성(Isolation)</li>
+<li>지속성(Durability)</li>
+</ol>
+<hr />
+<p><strong>Q9.</strong> 격리 수준 중 더티 리드(Dirty Read)를 허용하는 가장 낮은 격리 수준은?</p>
+<ol>
+<li>READ COMMITTED</li>
+<li>READ UNCOMMITTED</li>
+<li>REPEATABLE READ</li>
+<li>SERIALIZABLE</li>
+</ol>
+<hr />
+<p><strong>Q10.</strong> 다음 설명에 해당하는 동시성 문제는?</p>
+<blockquote>
+<p>트랜잭션 A가 같은 조건으로 두 번 조회했을 때, 두 번째 조회에서 이전에 없던 행이 나타남</p>
+</blockquote>
+<ol>
+<li>더티 리드(Dirty Read)</li>
+<li>반복 불가능 읽기(Non-repeatable Read)</li>
+<li>팬텀 리드(Phantom Read)</li>
+<li>갱신 손실(Lost Update)</li>
+</ol>
+<hr />
+<h2 id="nosql">NoSQL<a class="headerlink" href="#nosql" title="Permanent link">&para;</a></h2>
+<p><strong>Q11.</strong> CAP 정리에서 분산 시스템이 반드시 만족해야 하는 속성은?</p>
+<ol>
+<li>일관성(Consistency)</li>
+<li>가용성(Availability)</li>
+<li>분할 내성(Partition Tolerance)</li>
+<li>원자성(Atomicity)</li>
+</ol>
+<hr />
+<p><strong>Q12.</strong> 다음 중 문서 저장소(Document Store) NoSQL에 해당하는 것은?</p>
+<ol>
+<li>Redis</li>
+<li>Cassandra</li>
+<li>MongoDB</li>
+<li>Neo4j</li>
+</ol>
+<hr />
+<p><strong>Q13.</strong> 세션 관리와 캐싱에 주로 사용되는 NoSQL 유형은?</p>
+<ol>
+<li>문서 저장소</li>
+<li>키-값 저장소</li>
+<li>컬럼 패밀리 저장소</li>
+<li>그래프 저장소</li>
+</ol>
+<hr />
+<hr />
+<p><strong>Q14.</strong> 기본키(Primary Key)의 특성으로 옳지 않은 것은?</p>
+<ol>
+<li>테이블 내에서 유일한 값이어야 한다</li>
+<li>NULL 값을 가질 수 없다</li>
+<li>하나의 테이블에 여러 개의 기본키를 설정할 수 있다</li>
+<li>다른 테이블의 외래키가 참조할 수 있다</li>
+</ol>
+<hr />
+<p><strong>Q15.</strong> 다음 SQL에서 서브쿼리의 역할로 옳은 것은?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Employee</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Employee</span><span class="p">);</span>
+</code></pre></div>
+<ol>
+<li>부서별 평균 급여를 계산한다</li>
+<li>전체 직원의 평균 급여를 계산하여 비교 기준으로 사용한다</li>
+<li>급여가 가장 높은 직원을 찾는다</li>
+<li>모든 직원의 이름을 조회한다</li>
+</ol>
+<hr />
+<p><strong>Q16.</strong> TRUNCATE와 DELETE의 차이로 옳은 것은?</p>
+<ol>
+<li>TRUNCATE는 특정 행만 삭제할 수 있다</li>
+<li>DELETE는 ROLLBACK이 불가능하다</li>
+<li>TRUNCATE는 DDL로 ROLLBACK이 불가능하다</li>
+<li>두 명령어는 동일하다</li>
+</ol>
+<hr />
+<p><strong>Q17.</strong> 인덱스가 가장 효과적으로 활용되는 경우는?</p>
+<ol>
+<li>테이블 전체 행을 조회할 때</li>
+<li>특정 컬럼으로 검색 조건이 자주 사용될 때</li>
+<li>INSERT가 빈번하게 발생할 때</li>
+<li>데이터가 자주 변경될 때</li>
+</ol>
+<hr />
+<p><strong>Q18.</strong> 다음 중 공유락(Shared Lock)에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>하나의 트랜잭션만 획득 가능하다</li>
+<li>다른 트랜잭션의 읽기를 차단한다</li>
+<li>여러 트랜잭션이 동시에 획득 가능하다</li>
+<li>쓰기 연산에 사용된다</li>
+</ol>
+<hr />
+<p><strong>Q19.</strong> 다음 설명에 해당하는 NoSQL 유형은?</p>
+<blockquote>
+<p>소셜 네트워크에서 친구 관계, 팔로워를 표현하거나 추천 알고리즘에 활용된다.</p>
+</blockquote>
+<ol>
+<li>키-값 저장소</li>
+<li>문서 저장소</li>
+<li>컬럼 패밀리 저장소</li>
+<li>그래프 저장소</li>
+</ol>
+<hr />
+<p><strong>Q20.</strong> 관계형 DB에서 참조 무결성(Referential Integrity)에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>기본키는 NULL이 될 수 없다</li>
+<li>외래키 값은 참조하는 테이블의 기본키에 존재하는 값이어야 한다</li>
+<li>모든 속성값은 원자값이어야 한다</li>
+<li>기본키는 변경할 수 없다</li>
+</ol>
+<hr />
+<p><strong>Q21.</strong> 다음 중 MVCC(Multi-Version Concurrency Control)의 장점으로 옳은 것은?</p>
+<ol>
+<li>쓰기 성능이 읽기보다 항상 빠르다</li>
+<li>읽기와 쓰기가 서로를 차단하지 않아 동시성이 높아진다</li>
+<li>데이터를 이전 버전 없이 단일 버전만 유지한다</li>
+<li>락(Lock) 기반보다 저장 공간을 적게 사용한다</li>
+</ol>
+<hr />
+<h2 id="_4">복합 문제<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>Q22.</strong> 다음 상황에서 적합한 정규화 단계와 해결 방법은?</p>
+<blockquote>
+<p>주문 테이블: (주문번호, 고객번호, 고객명, 고객주소, 상품코드, 상품명, 수량)
+주문번호+상품코드가 기본키이며, 고객명은 고객번호에만 종속되어 있다.</p>
+</blockquote>
+<ol>
+<li>1NF 위반 — 속성값을 원자값으로 분리</li>
+<li>2NF 위반 — 고객 테이블을 별도로 분리</li>
+<li>3NF 위반 — 이행 종속 제거</li>
+<li>BCNF 위반 — 결정자를 후보키로 변경</li>
+</ol>
+<hr />
+<p><strong>Q23.</strong> 다음 트랜잭션 시나리오에서 발생하는 문제와 이를 방지할 격리 수준은?</p>
+<blockquote>
+<p>트랜잭션 A가 잔액 100만원을 읽음 → 트랜잭션 B가 잔액을 50만원으로 수정 후 COMMIT → 트랜잭션 A가 다시 잔액을 읽었더니 50만원으로 변경됨</p>
+</blockquote>
+<ol>
+<li>더티 리드 — READ COMMITTED로 방지</li>
+<li>반복 불가능 읽기 — REPEATABLE READ로 방지</li>
+<li>팬텀 리드 — SERIALIZABLE로 방지</li>
+<li>갱신 손실 — READ UNCOMMITTED로 방지</li>
+</ol>
+<hr />
+<p><strong>Q24.</strong> 대규모 쇼핑몰 시스템에서 상품 카탈로그(유연한 속성, 다양한 카테고리)와 주문/결제(정합성 필수) 데이터를 저장할 때 가장 적합한 DB 선택은?</p>
+<ol>
+<li>상품 카탈로그: RDBMS / 주문: NoSQL</li>
+<li>상품 카탈로그: NoSQL(문서) / 주문: RDBMS</li>
+<li>상품 카탈로그와 주문 모두 RDBMS</li>
+<li>상품 카탈로그와 주문 모두 NoSQL</li>
+</ol>
+<hr />
+<p><strong>Q25.</strong> 다음 SQL의 실행 순서로 옳은 것은?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">dept</span><span class="p">,</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">Employee</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">30</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">dept</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5000</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<ol>
+<li>SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY</li>
+<li>FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY</li>
+<li>FROM → SELECT → WHERE → GROUP BY → HAVING → ORDER BY</li>
+<li>WHERE → FROM → GROUP BY → SELECT → HAVING → ORDER BY</li>
+</ol>
+<hr />
+<h2 id="2">복합 문제 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p><strong>Q26.</strong> 인덱스와 트랜잭션의 관계에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>인덱스는 트랜잭션 격리 수준에 영향을 받지 않는다</li>
+<li>INSERT/UPDATE/DELETE 트랜잭션 수행 시 인덱스도 함께 갱신된다</li>
+<li>인덱스가 많을수록 트랜잭션 성능이 향상된다</li>
+<li>인덱스는 ROLLBACK 시 원래 상태로 되돌아가지 않는다</li>
+</ol>
+<hr />
+<p><strong>Q27.</strong> 정규화와 성능의 관계로 옳은 것은?</p>
+<ol>
+<li>정규화를 많이 할수록 항상 성능이 향상된다</li>
+<li>정규화는 중복을 줄이지만 조인이 많아져 읽기 성능이 저하될 수 있다</li>
+<li>역정규화(Denormalization)는 데이터 무결성을 높인다</li>
+<li>BCNF까지 정규화하면 더 이상 이상 현상이 발생하지 않는다</li>
+</ol>
+<hr />
+<p><strong>Q28.</strong> 다음 중 SQL 집계 함수와 NULL 처리에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>COUNT(*)는 NULL을 포함하여 행 수를 센다</li>
+<li>SUM(column)은 NULL을 0으로 처리한다</li>
+<li>AVG(column)는 NULL 포함 전체 행 수로 나눈다</li>
+<li>MAX(column)는 NULL을 최댓값으로 처리한다</li>
+</ol>
+<hr />
+<p><strong>Q29.</strong> 소셜 미디어 플랫폼에서 "A가 B를 팔로우하고, B가 C를 팔로우할 때, A와 C의 공통 팔로워 찾기"에 가장 적합한 DB는?</p>
+<ol>
+<li>RDBMS (MySQL)</li>
+<li>키-값 저장소 (Redis)</li>
+<li>문서 저장소 (MongoDB)</li>
+<li>그래프 저장소 (Neo4j)</li>
+</ol>
+<hr />
+<p><strong>Q30.</strong> 다음 중 데이터베이스 설계 순서로 옳은 것은?</p>
+<ol>
+<li>물리적 설계 → 논리적 설계 → 개념적 설계</li>
+<li>개념적 설계(ER 다이어그램) → 논리적 설계(릴레이션) → 물리적 설계(인덱스, 파티션)</li>
+<li>논리적 설계 → 개념적 설계 → 물리적 설계</li>
+<li>개념적 설계 → 물리적 설계 → 논리적 설계</li>
+</ol>
+<hr />
+<h2 id="_5">정답<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>번호</th>
+<th>정답</th>
+<th>해설</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td><strong>2</strong></td>
+<td>2NF 위반 = 부분 함수 종속 (기본키 일부에만 종속)</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td><strong>3</strong></td>
+<td>학번→학과코드→학과명은 이행 함수 종속 → 3NF 위반</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td><strong>2</strong></td>
+<td>M:N은 중간 연결 테이블로 분해해야 관계형 DB에서 표현 가능</td>
+</tr>
+<tr>
+<td>Q4</td>
+<td><strong>2</strong></td>
+<td>HAVING은 GROUP BY 후 집계 조건 필터</td>
+</tr>
+<tr>
+<td>Q5</td>
+<td><strong>3</strong></td>
+<td>LEFT JOIN = 왼쪽 테이블 전체 + 오른쪽 일치 행 (없으면 NULL)</td>
+</tr>
+<tr>
+<td>Q6</td>
+<td><strong>3</strong></td>
+<td>뷰에는 직접 인덱스 생성 불가</td>
+</tr>
+<tr>
+<td>Q7</td>
+<td><strong>2</strong></td>
+<td>DDL(CREATE/DROP 등)은 자동 COMMIT, DML은 수동 COMMIT/ROLLBACK 가능</td>
+</tr>
+<tr>
+<td>Q8</td>
+<td><strong>4</strong></td>
+<td>지속성(Durability): COMMIT 후 영구 반영</td>
+</tr>
+<tr>
+<td>Q9</td>
+<td><strong>2</strong></td>
+<td>READ UNCOMMITTED는 커밋 안 된 데이터도 읽음 (더티 리드 발생)</td>
+</tr>
+<tr>
+<td>Q10</td>
+<td><strong>3</strong></td>
+<td>팬텀 리드: 같은 조건 조회 시 없던 행이 나타나거나 사라지는 현상</td>
+</tr>
+<tr>
+<td>Q11</td>
+<td><strong>3</strong></td>
+<td>분산 시스템에서 네트워크 파티션(P)은 불가피 → P는 필수</td>
+</tr>
+<tr>
+<td>Q12</td>
+<td><strong>3</strong></td>
+<td>MongoDB = 문서 저장소 / Redis = 키-값 / Cassandra = 컬럼 / Neo4j = 그래프</td>
+</tr>
+<tr>
+<td>Q13</td>
+<td><strong>2</strong></td>
+<td>키-값 저장소(Redis)가 세션·캐싱에 최적</td>
+</tr>
+<tr>
+<td>Q14</td>
+<td><strong>3</strong></td>
+<td>하나의 테이블에 기본키는 1개만 설정 가능</td>
+</tr>
+<tr>
+<td>Q15</td>
+<td><strong>2</strong></td>
+<td>스칼라 서브쿼리: 단일 값(전체 평균) 반환 후 비교 기준으로 사용</td>
+</tr>
+<tr>
+<td>Q16</td>
+<td><strong>3</strong></td>
+<td>TRUNCATE = DDL → 자동 COMMIT, ROLLBACK 불가 / DELETE = DML → ROLLBACK 가능</td>
+</tr>
+<tr>
+<td>Q17</td>
+<td><strong>2</strong></td>
+<td>인덱스는 검색 조건(WHERE)이 자주 사용되는 컬럼에 효과적</td>
+</tr>
+<tr>
+<td>Q18</td>
+<td><strong>3</strong></td>
+<td>공유락(S-Lock): 읽기용, 여러 트랜잭션 동시 획득 가능</td>
+</tr>
+<tr>
+<td>Q19</td>
+<td><strong>4</strong></td>
+<td>그래프 저장소: 노드(사람)와 엣지(관계) 표현에 최적</td>
+</tr>
+<tr>
+<td>Q20</td>
+<td><strong>2</strong></td>
+<td>참조 무결성: 외래키 값은 참조 테이블의 PK에 반드시 존재해야 함</td>
+</tr>
+<tr>
+<td>Q21</td>
+<td><strong>2</strong></td>
+<td>MVCC: 이전 버전 데이터 유지 → 읽기와 쓰기가 서로 차단 안 함</td>
+</tr>
+<tr>
+<td>Q22</td>
+<td><strong>2</strong></td>
+<td>고객명이 기본키 일부(고객번호)에만 종속 → 2NF 위반 → 고객 테이블 분리</td>
+</tr>
+<tr>
+<td>Q23</td>
+<td><strong>2</strong></td>
+<td>같은 데이터를 두 번 읽었을 때 값이 달라짐 = 반복 불가능 읽기 → REPEATABLE READ로 방지</td>
+</tr>
+<tr>
+<td>Q24</td>
+<td><strong>2</strong></td>
+<td>유연한 스키마 → NoSQL(문서) / 결제·정합성 → RDBMS</td>
+</tr>
+<tr>
+<td>Q25</td>
+<td><strong>2</strong></td>
+<td>SQL 실행 순서: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY</td>
+</tr>
+<tr>
+<td>Q26</td>
+<td><strong>2</strong></td>
+<td>DML 수행 시 인덱스도 함께 갱신 → 쓰기 성능 저하 원인</td>
+</tr>
+<tr>
+<td>Q27</td>
+<td><strong>2</strong></td>
+<td>정규화: 중복↓, 조인↑ → 읽기 성능 저하 가능 → 역정규화로 보완</td>
+</tr>
+<tr>
+<td>Q28</td>
+<td><strong>1</strong></td>
+<td>COUNT(*)는 NULL 포함 / COUNT(column)은 NULL 제외 / SUM·AVG는 NULL 무시</td>
+</tr>
+<tr>
+<td>Q29</td>
+<td><strong>4</strong></td>
+<td>관계 탐색(팔로워, 공통 친구)은 그래프 DB가 최적</td>
+</tr>
+<tr>
+<td>Q30</td>
+<td><strong>2</strong></td>
+<td>DB 설계 순서: 개념적(ER) → 논리적(릴레이션) → 물리적(인덱스)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

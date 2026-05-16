@@ -1,0 +1,2702 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TOPCIT 시험 준비 및 CS 공부 정리">
+      
+      
+        <meta name="author" content="hundredman">
+      
+      
+        <link rel="canonical" href="https://hundredman.github.io/cs-study/TOPCIT/04_%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/">
+      
+      
+        <link rel="prev" href="../04_%EB%B3%B4%EC%95%88%EA%B4%80%EB%A6%AC/">
+      
+      
+        <link rel="next" href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>연습문제 - CS Study</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../../.." title="CS Study" class="md-header__button md-logo" aria-label="CS Study" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CS Study
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              연습문제
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hundredman/cs-study" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hundredman/cs-study
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TOPCIT
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="CS Study" class="md-nav__button md-logo" aria-label="CS Study" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CS Study
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hundredman/cs-study" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hundredman/cs-study
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TOPCIT
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TOPCIT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. 소프트웨어 개발
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. 소프트웨어 개발
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/01_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    알고리즘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/02_%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자료구조
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/03_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B3%B5%ED%95%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    소프트웨어 공학
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/04_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    객체지향 프로그래밍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B0%9C%EB%B0%9C/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. 데이터베이스
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. 데이터베이스
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/01_%EA%B4%80%EA%B3%84%ED%98%95%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    관계형 데이터베이스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/02_SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/03_%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    트랜잭션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/04_NoSQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NoSQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. 네트워크
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. 네트워크
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/01_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EA%B8%B0%EC%B4%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    네트워크 기초
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/02_%EC%A0%84%EC%86%A1%EA%B3%84%EC%B8%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    전송 계층
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/03_%EC%9D%91%EC%9A%A9%EA%B3%84%EC%B8%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    응용 계층
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/04_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9E%A5%EB%B9%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    네트워크 장비
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. 정보보안
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. 정보보안
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_%EC%95%94%ED%98%B8%ED%99%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    암호화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%B3%B4%EC%95%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    네트워크 보안
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_%EC%B7%A8%EC%95%BD%EC%A0%90%EB%B0%8F%EA%B3%B5%EA%B2%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    취약점 및 공격
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_%EB%B3%B4%EC%95%88%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    보안 관리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        암호화
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        네트워크 보안
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        취약점 및 공격
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        보안 관리
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        복합 문제
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정답
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. IT 비즈니스
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5. IT 비즈니스
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로젝트 관리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/02_IT%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B4%80%EB%A6%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT 서비스 관리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/03_%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%B6%84%EC%84%9D%EB%B0%8F%EC%84%A4%EA%B3%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시스템 분석 및 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/04_%EC%8B%A0%EA%B8%B0%EC%88%A0%ED%8A%B8%EB%A0%8C%EB%93%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    신기술 트렌드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_IT%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. 수학/통계
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    6. 수학/통계
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/01_%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    이산수학
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/02_%ED%99%95%EB%A5%A0%ED%86%B5%EA%B3%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    확률/통계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/03_%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    선형대수
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/04_%EC%88%98%EC%B9%98%ED%95%B4%EC%84%9D%EA%B8%B0%EC%B4%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    수치해석 기초
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_%EC%88%98%ED%95%99%ED%86%B5%EA%B3%84/05_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    연습문제
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%ED%86%B5%ED%95%A9%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    통합 모의고사
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    오답 노트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%ED%95%B5%EC%8B%AC%EC%9A%94%EC%95%BD%EC%B9%B4%EB%93%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    핵심 요약 카드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%8B%9C%ED%97%98%EC%95%88%EB%82%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시험 안내
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EC%98%81%EC%97%AD%EA%B0%84%EC%97%B0%EA%B2%B0%EA%B0%9C%EB%85%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    영역 간 연결 개념
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%EA%B3%B5%EC%8B%9D%EC%9E%90%EB%A3%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    공식 자료
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        암호화
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        네트워크 보안
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        취약점 및 공격
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        보안 관리
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        복합 문제
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정답
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">정보보안 연습문제<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_2">암호화<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>Q1.</strong> 대칭키 암호화와 비대칭키 암호화에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>대칭키는 공개키와 개인키 쌍을 사용한다</li>
+<li>비대칭키는 대칭키보다 속도가 빠르다</li>
+<li>HTTPS는 비대칭키로 대칭키를 교환한 후 대칭키로 통신한다</li>
+<li>AES는 비대칭키 알고리즘이다</li>
+</ol>
+<hr />
+<p><strong>Q2.</strong> 해시 함수의 특성으로 옳지 않은 것은?</p>
+<ol>
+<li>단방향성 — 해시값으로 원본 복원 불가</li>
+<li>같은 입력은 항상 같은 출력</li>
+<li>입력이 조금 달라도 출력이 크게 달라짐 (눈사태 효과)</li>
+<li>해시값으로 원본 데이터를 복호화할 수 있다</li>
+</ol>
+<hr />
+<p><strong>Q3.</strong> 디지털 서명에서 서명 생성과 검증에 사용되는 키는?</p>
+<ol>
+<li>서명: 공개키, 검증: 개인키</li>
+<li>서명: 개인키, 검증: 공개키</li>
+<li>서명과 검증 모두 공개키</li>
+<li>서명과 검증 모두 개인키</li>
+</ol>
+<hr />
+<p><strong>Q4.</strong> 현재 표준으로 사용되는 대칭키 암호화 알고리즘은?</p>
+<ol>
+<li>DES</li>
+<li>MD5</li>
+<li>AES</li>
+<li>RSA</li>
+</ol>
+<hr />
+<h2 id="_3">네트워크 보안<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><strong>Q5.</strong> TLS Handshake 과정에서 비대칭키가 사용되는 목적은?</p>
+<ol>
+<li>모든 데이터를 암호화하기 위해</li>
+<li>대칭키를 안전하게 교환하기 위해</li>
+<li>서버의 신원을 영구적으로 저장하기 위해</li>
+<li>패킷의 순서를 보장하기 위해</li>
+</ol>
+<hr />
+<p><strong>Q6.</strong> IDS의 탐지 방식 중 시그니처 기반 탐지의 단점은?</p>
+<ol>
+<li>알려진 공격도 탐지하지 못한다</li>
+<li>오탐(False Positive)이 매우 높다</li>
+<li>새로운(Zero-day) 공격을 탐지할 수 없다</li>
+<li>처리 속도가 너무 느리다</li>
+</ol>
+<hr />
+<h2 id="_4">취약점 및 공격<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>Q7.</strong> SQL Injection 방어 방법으로 가장 효과적인 것은?</p>
+<ol>
+<li>입력값 길이 제한</li>
+<li>Prepared Statement (파라미터화 쿼리) 사용</li>
+<li>특수문자 필터링만 적용</li>
+<li>에러 메시지 숨기기</li>
+</ol>
+<hr />
+<p><strong>Q8.</strong> 저장형 XSS(Stored XSS)의 특징으로 옳은 것은?</p>
+<ol>
+<li>URL 파라미터를 통해 즉시 실행된다</li>
+<li>클라이언트 측 JS의 DOM 조작으로 발생한다</li>
+<li>악성 스크립트가 DB에 저장되어 여러 사용자에게 전달된다</li>
+<li>서버에 아무런 영향을 주지 않는다</li>
+</ol>
+<hr />
+<p><strong>Q9.</strong> CSRF 공격과 XSS 공격의 차이로 옳은 것은?</p>
+<ol>
+<li>CSRF는 피해자 브라우저에서 스크립트를 실행시킨다</li>
+<li>XSS는 피해자 권한으로 서버에 위조 요청을 보낸다</li>
+<li>CSRF는 피해자가 로그인 상태일 때 위조 요청을 발생시킨다</li>
+<li>XSS와 CSRF는 동일한 공격 방식이다</li>
+</ol>
+<hr />
+<p><strong>Q10.</strong> SYN Flood 공격의 원리는?</p>
+<ol>
+<li>서버의 디스크를 가득 채워 서비스를 중단시킨다</li>
+<li>대량의 SYN 패킷을 보내 서버의 연결 대기 큐를 고갈시킨다</li>
+<li>정상 사용자의 세션을 탈취하여 권한을 획득한다</li>
+<li>DNS 서버를 공격하여 도메인 변조를 유발한다</li>
+</ol>
+<hr />
+<p><strong>Q11.</strong> 다음 설명에 해당하는 공격은?</p>
+<blockquote>
+<p>DNS를 변조하여 사용자가 정상적인 URL을 입력해도 가짜 사이트로 유도함</p>
+</blockquote>
+<ol>
+<li>피싱(Phishing)</li>
+<li>스미싱(Smishing)</li>
+<li>파밍(Pharming)</li>
+<li>스피어 피싱(Spear Phishing)</li>
+</ol>
+<hr />
+<h2 id="_5">보안 관리<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>Q12.</strong> CIA 트라이어드에 포함되지 않는 것은?</p>
+<ol>
+<li>기밀성(Confidentiality)</li>
+<li>무결성(Integrity)</li>
+<li>가용성(Availability)</li>
+<li>인증성(Authenticity)</li>
+</ol>
+<hr />
+<p><strong>Q13.</strong> RBAC(Role-Based Access Control)에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>데이터 소유자가 직접 권한을 결정한다</li>
+<li>시스템이 보안 등급에 따라 강제로 접근을 제어한다</li>
+<li>역할(Role)에 권한을 부여하고 사용자에게 역할을 할당한다</li>
+<li>시간과 위치 등 다양한 속성으로 접근을 제어한다</li>
+</ol>
+<hr />
+<p><strong>Q14.</strong> 백업 유형 중 복구 시 가장 많은 시간이 걸리는 것은?</p>
+<ol>
+<li>전체 백업(Full Backup)</li>
+<li>증분 백업(Incremental Backup)</li>
+<li>차등 백업(Differential Backup)</li>
+<li>모두 동일하다</li>
+</ol>
+<hr />
+<p><strong>Q15.</strong> RTO(Recovery Time Objective)의 정의로 옳은 것은?</p>
+<ol>
+<li>장애 발생 간격의 평균 시간</li>
+<li>장애 발생 후 서비스 복구까지 목표 시간</li>
+<li>데이터 백업 주기</li>
+<li>마지막으로 복구 가능한 데이터의 시점</li>
+</ol>
+<hr />
+<hr />
+<p><strong>Q16.</strong> 다음 중 해시 함수의 용도로 옳지 않은 것은?</p>
+<ol>
+<li>비밀번호 저장 (해시+Salt)</li>
+<li>파일 무결성 검증</li>
+<li>데이터 암호화 후 복호화</li>
+<li>디지털 서명</li>
+</ol>
+<hr />
+<p><strong>Q17.</strong> 랜섬웨어(Ransomware) 공격에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>피해자의 파일을 암호화하고 복호화 대가로 금전을 요구한다</li>
+<li>피해자 몰래 파일을 외부로 유출한다</li>
+<li>피해자의 계정 정보만을 탈취한다</li>
+<li>서버에 대량 트래픽을 발생시켜 서비스를 마비시킨다</li>
+</ol>
+<hr />
+<p><strong>Q18.</strong> 다음 중 다중 인증(MFA)의 조합으로 가장 강력한 것은?</p>
+<ol>
+<li>비밀번호 + PIN 번호</li>
+<li>비밀번호 + OTP</li>
+<li>PIN + 패턴</li>
+<li>아이디 + 비밀번호</li>
+</ol>
+<hr />
+<p><strong>Q19.</strong> HTTPS의 인증서에 포함되지 않는 정보는?</p>
+<ol>
+<li>서버의 공개키</li>
+<li>인증기관(CA)의 서명</li>
+<li>서버의 개인키</li>
+<li>인증서 유효 기간</li>
+</ol>
+<hr />
+<p><strong>Q20.</strong> XSS 방어 방법 중 HTTPOnly 쿠키 설정의 효과는?</p>
+<ol>
+<li>쿠키가 HTTPS 연결에서만 전송된다</li>
+<li>JavaScript에서 쿠키에 접근하는 것을 차단한다</li>
+<li>쿠키의 만료 시간을 자동으로 설정한다</li>
+<li>쿠키 값이 암호화된다</li>
+</ol>
+<hr />
+<p><strong>Q21.</strong> 정보보안에서 최소 권한 원칙(Principle of Least Privilege)을 적용한 사례로 옳은 것은?</p>
+<ol>
+<li>모든 직원에게 관리자 권한을 부여하여 업무 효율을 높인다</li>
+<li>DB 애플리케이션 계정에 SELECT 권한만 부여한다 (읽기 전용 앱)</li>
+<li>보안 강화를 위해 모든 파일에 암호화를 적용한다</li>
+<li>직원이 퇴사 후에도 계정을 일정 기간 유지한다</li>
+</ol>
+<hr />
+<p><strong>Q22.</strong> 증분 백업(Incremental Backup)과 차등 백업(Differential Backup)의 차이로 옳은 것은?</p>
+<ol>
+<li>증분: 마지막 전체 백업 이후 변경분 / 차등: 마지막 백업 이후 변경분</li>
+<li>증분: 마지막 백업(전체·증분 포함) 이후 변경분 / 차등: 마지막 전체 백업 이후 변경분</li>
+<li>증분과 차등은 동일하다</li>
+<li>증분: 전체 데이터 / 차등: 변경 데이터만</li>
+</ol>
+<hr />
+<h2 id="_6">복합 문제<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>Q23.</strong> 웹 애플리케이션에서 로그인 기능을 구현할 때, 다음 보안 위협과 대응 방법의 연결이 옳지 않은 것은?</p>
+<ol>
+<li>SQL Injection → Prepared Statement 사용</li>
+<li>XSS → 출력 시 HTML 이스케이프 처리</li>
+<li>무차별 대입(Brute Force) → 로그인 시도 횟수 제한</li>
+<li>CSRF → 비밀번호 해시 + Salt 처리</li>
+</ol>
+<hr />
+<p><strong>Q24.</strong> 다음 시나리오에서 침해된 CIA 요소를 바르게 연결한 것은?</p>
+<table>
+<thead>
+<tr>
+<th>공격</th>
+<th>CIA 침해 요소</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 해커가 DB에서 고객 개인정보를 탈취</td>
+<td>?</td>
+</tr>
+<tr>
+<td>② 공격자가 금융 거래 기록을 변조</td>
+<td>?</td>
+</tr>
+<tr>
+<td>③ DDoS로 쇼핑몰 서비스 중단</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>①기밀성, ②무결성, ③가용성</li>
+<li>①무결성, ②기밀성, ③가용성</li>
+<li>①가용성, ②무결성, ③기밀성</li>
+<li>①기밀성, ②가용성, ③무결성</li>
+</ol>
+<hr />
+<p><strong>Q25.</strong> 전자서명(Digital Signature) 과정을 순서대로 나열한 것은?</p>
+<ol>
+<li>문서 해시 생성 → 공개키로 암호화 → 전송 → 개인키로 복호화 → 비교</li>
+<li>문서 해시 생성 → 개인키로 암호화(서명) → 전송 → 공개키로 복호화 → 해시 비교</li>
+<li>공개키로 암호화 → 문서 해시 생성 → 전송 → 개인키로 복호화</li>
+<li>개인키로 암호화 → 전송 → 공개키로 복호화 → 문서 전체 비교</li>
+</ol>
+<hr />
+<p><strong>Q26.</strong> ISMS-P 인증과 ISO 27001의 차이로 옳은 것은?</p>
+<ol>
+<li>ISMS-P는 국제 표준, ISO 27001은 국내 표준이다</li>
+<li>ISMS-P는 정보보호+개인정보보호 통합 인증(한국), ISO 27001은 국제 정보보호 표준이다</li>
+<li>두 인증은 완전히 동일하다</li>
+<li>ISMS-P는 기업에 의무, ISO 27001은 선택 사항이다</li>
+</ol>
+<hr />
+<p><strong>Q27.</strong> 제로데이(Zero-day) 취약점에 대한 설명으로 옳은 것은?</p>
+<ol>
+<li>패치가 이미 배포된 알려진 취약점이다</li>
+<li>벤더가 인지하지 못했거나 패치가 없는 취약점으로 즉시 방어가 어렵다</li>
+<li>시스템 운영 0일차에만 발생하는 취약점이다</li>
+<li>사회공학적 공격의 한 종류이다</li>
+</ol>
+<hr />
+<p><strong>Q28.</strong> 다음 중 개인정보보호법상 개인정보에 해당하지 않는 것은?</p>
+<ol>
+<li>이름 + 전화번호</li>
+<li>이름 + 생년월일</li>
+<li>완전히 비식별화된 통계 데이터</li>
+<li>이메일 주소</li>
+</ol>
+<hr />
+<p><strong>Q29.</strong> 공개 Wi-Fi에서 HTTPS를 사용하지 않는 웹사이트 접속 시 발생할 수 있는 공격은?</p>
+<ol>
+<li>SQL Injection</li>
+<li>중간자 공격(MITM, Man-in-the-Middle)</li>
+<li>DDoS</li>
+<li>랜섬웨어</li>
+</ol>
+<hr />
+<p><strong>Q30.</strong> 비밀번호 저장 시 Salt를 추가하는 이유는?</p>
+<ol>
+<li>비밀번호 길이를 늘리기 위해</li>
+<li>동일한 비밀번호도 다른 해시값이 생성되어 레인보우 테이블 공격을 방어하기 위해</li>
+<li>비밀번호를 복호화 가능하게 하기 위해</li>
+<li>해시 연산 속도를 높이기 위해</li>
+</ol>
+<hr />
+<h2 id="_7">정답<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>번호</th>
+<th>정답</th>
+<th>해설</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td><strong>3</strong></td>
+<td>HTTPS = 비대칭키로 대칭키 교환 → 대칭키로 실제 통신</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td><strong>4</strong></td>
+<td>해시는 단방향 — 복호화 불가</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td><strong>2</strong></td>
+<td>디지털 서명: 개인키로 서명, 공개키로 검증</td>
+</tr>
+<tr>
+<td>Q4</td>
+<td><strong>3</strong></td>
+<td>AES가 현재 표준 대칭키 (DES는 취약, RSA는 비대칭)</td>
+</tr>
+<tr>
+<td>Q5</td>
+<td><strong>2</strong></td>
+<td>TLS: 비대칭키로 세션키(대칭키) 교환 후 대칭키로 통신</td>
+</tr>
+<tr>
+<td>Q6</td>
+<td><strong>3</strong></td>
+<td>시그니처 기반: 알려진 공격 패턴만 탐지 → Zero-day 탐지 불가</td>
+</tr>
+<tr>
+<td>Q7</td>
+<td><strong>2</strong></td>
+<td>Prepared Statement가 가장 근본적인 SQL Injection 방어</td>
+</tr>
+<tr>
+<td>Q8</td>
+<td><strong>3</strong></td>
+<td>저장형 XSS: DB에 스크립트 저장 → 불특정 다수 피해</td>
+</tr>
+<tr>
+<td>Q9</td>
+<td><strong>3</strong></td>
+<td>CSRF: 로그인된 피해자 권한으로 위조 요청 발생</td>
+</tr>
+<tr>
+<td>Q10</td>
+<td><strong>2</strong></td>
+<td>SYN Flood: half-open 연결로 서버 큐 고갈 → 정상 연결 불가</td>
+</tr>
+<tr>
+<td>Q11</td>
+<td><strong>3</strong></td>
+<td>파밍: DNS 변조로 가짜 사이트 유도 / 피싱: 가짜 이메일·사이트</td>
+</tr>
+<tr>
+<td>Q12</td>
+<td><strong>4</strong></td>
+<td>CIA = 기밀성, 무결성, 가용성 (인증성은 포함 안 됨)</td>
+</tr>
+<tr>
+<td>Q13</td>
+<td><strong>3</strong></td>
+<td>RBAC: 역할 기반 (DAC=소유자, MAC=시스템 강제, ABAC=속성)</td>
+</tr>
+<tr>
+<td>Q14</td>
+<td><strong>2</strong></td>
+<td>증분 백업: 복구 시 전체+모든 증분 백업 순서대로 적용 필요</td>
+</tr>
+<tr>
+<td>Q15</td>
+<td><strong>2</strong></td>
+<td>RTO=복구 시간 목표 / RPO=복구 시점 목표</td>
+</tr>
+<tr>
+<td>Q16</td>
+<td><strong>3</strong></td>
+<td>해시는 단방향 — 복호화 불가 / 암호화(복호화 가능)와 다름</td>
+</tr>
+<tr>
+<td>Q17</td>
+<td><strong>1</strong></td>
+<td>랜섬웨어: 파일 암호화 후 금전 요구</td>
+</tr>
+<tr>
+<td>Q18</td>
+<td><strong>2</strong></td>
+<td>MFA 강도: 지식+소유 조합이 강함 (비밀번호+OTP = 지식+소유)</td>
+</tr>
+<tr>
+<td>Q19</td>
+<td><strong>3</strong></td>
+<td>인증서에는 공개키만 포함 — 개인키는 서버가 비공개로 보관</td>
+</tr>
+<tr>
+<td>Q20</td>
+<td><strong>2</strong></td>
+<td>HTTPOnly: JS에서 쿠키 접근 차단 → XSS로 쿠키 탈취 방지</td>
+</tr>
+<tr>
+<td>Q21</td>
+<td><strong>2</strong></td>
+<td>최소 권한: 필요한 권한만 부여 (읽기 전용 앱에 SELECT만)</td>
+</tr>
+<tr>
+<td>Q22</td>
+<td><strong>2</strong></td>
+<td>증분: 마지막 백업 이후 변경분(복구 복잡) / 차등: 마지막 전체 이후 변경분(복구 단순)</td>
+</tr>
+<tr>
+<td>Q23</td>
+<td><strong>4</strong></td>
+<td>CSRF 방어 = CSRF 토큰·SameSite 쿠키 / 비밀번호 해시는 탈취 대비</td>
+</tr>
+<tr>
+<td>Q24</td>
+<td><strong>1</strong></td>
+<td>기밀성=탈취, 무결성=변조, 가용성=서비스 중단</td>
+</tr>
+<tr>
+<td>Q25</td>
+<td><strong>2</strong></td>
+<td>디지털 서명: 개인키로 서명 → 공개키로 검증</td>
+</tr>
+<tr>
+<td>Q26</td>
+<td><strong>2</strong></td>
+<td>ISMS-P=한국 통합 인증 / ISO 27001=국제 표준</td>
+</tr>
+<tr>
+<td>Q27</td>
+<td><strong>2</strong></td>
+<td>Zero-day: 패치 없는 미공개 취약점 → 즉각 방어 어려움</td>
+</tr>
+<tr>
+<td>Q28</td>
+<td><strong>3</strong></td>
+<td>완전 비식별화된 통계는 개인 식별 불가 → 개인정보 아님</td>
+</tr>
+<tr>
+<td>Q29</td>
+<td><strong>2</strong></td>
+<td>공개 Wi-Fi + HTTP = 패킷 도청 가능 → MITM 공격 위험</td>
+</tr>
+<tr>
+<td>Q30</td>
+<td><strong>2</strong></td>
+<td>Salt: 해시 입력에 임의값 추가 → 동일 비밀번호도 다른 해시 → 레인보우 테이블 무력화</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
